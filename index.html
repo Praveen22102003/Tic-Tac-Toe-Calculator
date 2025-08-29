@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Management</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h2>Task Management</h2><br><br>
+  <div class="whole">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <form action="">
+          Add new Task<br>
+          <input type="text" placeholder="Enter Task" id="input" class="input" maxlength="30">
+        </form>
+      </div>
+
+      <div class="col-md-3">
+        Select Priority <br>
+        <select id="priority" class="input">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-primary" id="add">Add task</button>
+      </div>
+    </div> 
+    </div>
+
+    <br>
+    <h3 id="text">Tasks &nbsp;&nbsp;&nbsp;
+      <span id="message" style="font-weight: 100; font-size: smaller;"></span>
+    </h3>
+
+    <table id="table" class="table">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Priority</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tasks"></tbody>
+    </table>
+  </div>
+
+  
+</body>
+</html>
